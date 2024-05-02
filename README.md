@@ -1,4 +1,4 @@
-# RetDream
+# ReDream
 [**Project Page**](https://ku-cvlab.github.io/RetDream/)
 
 Official implementation of "Retrieval-Augmented Score Distillation for Text-to-3D Generation"
