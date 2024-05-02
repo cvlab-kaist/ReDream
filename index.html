@@ -12,7 +12,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>RetDream</title>
+    <title>ReDream</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,12 +22,12 @@
     <meta property="og:image:width" content="670">
     <meta property="og:image:height" content="670">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ku-cvlab.github.io/RetDream/">
-    <meta property="og:title" content="RetDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
+    <meta property="og:url" content="https://ku-cvlab.github.io/ReDream/">
+    <meta property="og:title" content="ReDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
     <meta property="og:description" content="">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="RetDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
+    <meta name="twitter:title" content="ReDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
     <meta name="twitter:description" content="For text-to-3D generation, we propose to leverage the retrieved 3D asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, resulting in facilitating generation of high-quality 3D assets with added controllability and negligible training cost.">
     <!-- <meta name="twitter:image" content="img/cats.png"> -->
 
@@ -120,7 +120,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/KU-CVLAB/RetDream" target="_blank">
+                            <a href="https://github.com/KU-CVLAB/ReDream" target="_blank">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -151,7 +151,7 @@
                     <b>Motivation</b>
                 </h3>
                     <p class="text-justify">
-                        Our key motivation is that 3D assets, which are semantically aligned with a given text, become a minimal yet effective guidance of 3D geometries for SDS-based approaches. Then, <b>RetDream can largely maintain the quality of the pre-trained 2D diffusion model, but also provide an effective geometric prior</b>.
+                        Our key motivation is that 3D assets, which are semantically aligned with a given text, become a minimal yet effective guidance of 3D geometries for SDS-based approaches. Then, <b>ReDream can largely maintain the quality of the pre-trained 2D diffusion model, but also provide an effective geometric prior</b>.
                     </p>
                     <div class="text-center">
                         <video id="ide" width="80%" playsinline autoplay loop muted>
@@ -171,7 +171,7 @@
                 <div style="width: 90%;">
                     <img src="img/motivation_1.png" style="float: right; width: 40%; height: auto; margin-left: 20px;">
                     <div class="text-justify">
-                        Text-to-3D generation has achieved significant success through incorporation of powerful 2D diffusion models, but is currently with problem such as view inconsistency (AKA Janus problem) and limitation in quality and diversity of 3D data viable for training. To sidestep these trade-offs, we explore a retrieval-augmented approach tailored for score distillation, dubbed RetDream. We leverage the retrieved asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, achieving drastic improvements in both geometry and fidelity of generated scenes. We conduct extensive experiments to demonstrate that RetDream exhibits superior quality with increased geometric consistency.
+                        Text-to-3D generation has achieved significant success through incorporation of powerful 2D diffusion models, but is currently with problem such as view inconsistency (AKA Janus problem) and limitation in quality and diversity of 3D data viable for training. To sidestep these trade-offs, we explore a retrieval-augmented approach tailored for score distillation, dubbed ReDream. We leverage the retrieved asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, achieving drastic improvements in both geometry and fidelity of generated scenes. We conduct extensive experiments to demonstrate that ReDream exhibits superior quality with increased geometric consistency.
                     </div>
                 </div>
                 
@@ -203,7 +203,7 @@
                 <div class="video-list" style="margin-top: 20px;">
                     <ul>
                     <li>
-                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/GkUXgF366Xg" title="RetDream Qualitative Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/GkUXgF366Xg" title="ReDream Qualitative Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </li>
                     </ul>
                 </div>
