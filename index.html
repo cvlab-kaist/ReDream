@@ -12,7 +12,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>ControlFace</title>
+    <title>ReDream</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,18 +22,18 @@
     <meta property="og:image:width" content="670">
     <meta property="og:image:height" content="670">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cvlab-kaist.github.io/ControlFace/">
-    <meta property="og:title" content="ControlFace: Harnessing Facial Parametric Control for Face Rigging">
+    <meta property="og:url" content="https://ku-cvlab.github.io/ReDream/">
+    <meta property="og:title" content="ReDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
     <meta property="og:description" content="">
 
-    <!-- <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ControlFace: Harnessing Facial Parametric Control for Face Rigging">
-    <meta name="twitter:description" content="For text-to-3D generation, we propose to leverage the retrieved 3D asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, resulting in facilitating generation of high-quality 3D assets with added controllability and negligible training cost."> -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ReDream: Retrieval-Augmented Score Distillation for Text-to-3D Generation">
+    <meta name="twitter:description" content="For text-to-3D generation, we propose to leverage the retrieved 3D asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, resulting in facilitating generation of high-quality 3D assets with added controllability and negligible training cost.">
     <!-- <meta name="twitter:image" content="img/cats.png"> -->
 
 
     <!-- mirror: F0%9F%AA%9E&lt -->
-    <!-- <link rel="icon" type="image/x-icon" href="img/retdream.ico"> -->
+    <link rel="icon" type="image/x-icon" href="img/retdream.ico">
     <!-- <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;%E2%9C%A8&lt;/text&gt;&lt;/svg&gt;"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -49,54 +49,60 @@
     <script src="js/app.js"></script>
     <script src="./js/jquery.twentytwenty.js"></script>
 </head>
-    <!-- <style>
-        .row {
-            margin-top: 1px; /* Adds spacing above the row */
-        }
-    </style> -->
+
 
 <body>
     <div class="container" id="header" style="text-align: center; margin: auto;">
         <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
             <h2 class="col-md-12 text-center" id="title">
-                ControlFace: Harnessing Facial Parametric Control for Face Rigging <br>
-                <!-- <small>
+                Retrieval-Augmented Score Distillation for Text-to-3D Generation <br>
+                <small>
                     ICML 2024
-                </small> -->
+                </small>
             </h2>
         </div>
         <div class="row" id="author-row" style="margin:0 auto;">
             <div class="col-md-12 text-center" style="display: table; margin:0 auto">
-                <a style="text-decoration:none">
-                    Wooseok&nbsp;Jang<sup>,1</sup>
+                <a style="text-decoration:none" href="https://j0seo.github.io/">
+                    Junyoung&nbsp;Seo*<sup>,1</sup>
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none">
-                    Youngjun&nbsp;Hong<sup>,2</sup>
+                <a style="text-decoration:none" href="https://susunghong.github.io">
+                    Susung&nbsp;Hong*<sup>,1</sup>
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none">
-                    Geonho&nbsp;Cha<sup>2</sup>
+                <a style="text-decoration:none" href="https://scholar.google.com/citations?hl=ko&user=7cyLEQ0AAAAJ">
+                    Wooseok&nbsp;Jang*<sup>1</sup>
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none">
-                    Seungryong&nbsp;Kim<sup>3</sup>
+                <a style="text-decoration:none" href="https://ines-hyeonsu-kim.github.io">
+                    Inès&nbsp;Hyeonsu&nbsp;Kim<sup>1</sup>
                 </a>
-                <table class="author-table" id="author-table" style="border-collapse: collapse; width: 10%; margin: auto;">
+                <br>
+                <a style="text-decoration:none" href="https://mskwak01.github.io">
+                    Minseop&nbsp;Kwak<sup>1</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://github.com/LeeDoYup">
+                    Doyup&nbsp;Lee<sup>2</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://cvlab.korea.ac.kr">
+                    Seungryong&nbsp;Kim<sup>1</sup>
+                </a>
+                <table class="author-table" id="author-table">
                     <tr>
-                        <td style="padding: 5px; text-align: center;">
+                        <td>
                             <sup>1</sup>Korea University
                         </td>
-                        <td style="padding: 5px; text-align: center;text-indent: 20px;">
-                            <sup>2</sup>NAVER Cloud
-                        </td>
-                        <td style="padding: 5px; text-align: center;">
-                            <sup>3</sup>KAIST
+                        <td>
+                            <sup>2</sup>Runway
                         </td>
                     </tr>
                 </table>
-
-                
+                <small>
+                    *Equal Contribution
+                </small>
             </div>
         </div>
     </div>
@@ -108,13 +114,13 @@
                 <div class="col-sm-6 col-sm-offset-3 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-<!--                             <a href="https://arxiv.org/abs/2402.02972"> -->
+                            <a href="https://arxiv.org/abs/2402.02972">
                             <img src="./img/paper_image.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/cvlab-kaist/ControlFace" target="_blank">
+                            <a href="https://github.com/KU-CVLAB/ReDream" target="_blank">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -122,39 +128,36 @@
                     </ul>
                 </div>
         </div>
-        
-        <div class="text-center">
-            <!-- <div class="col-md-8 col-md-offset-2">
-                <div class="text-justify">
-                          Rigging pose
-                </div>
-            </div> -->
-        <img src="./img/caption.png" width="65%">
-        <video id="ide" width="65%" playsinline autoplay loop muted>
-            <source src="vid/5.mp4" type="video/mp4" />
-        </video>
-        <video id="ide" width="65%" playsinline autoplay loop muted>
-            <source src="vid/10.mp4" type="video/mp4" />
-        </video>
-        <video id="ide" width="65%" playsinline autoplay loop muted>
-            <source src="vid/13.mp4" type="video/mp4" />
-        </video>
-        <video id="ide" width="65%" playsinline autoplay loop muted>
-            <source src="vid/14.mp4" type="video/mp4" />
-        </video>
-        <!-- <video id="ide" width="65%" playsinline autoplay loop muted>
-            <source src="vid/30.mp4" type="video/mp4" />
-        </video> -->
-    </div>
+
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="text-center">
-                    <img src="./img/teaser.png" width="100%">
+                    <video id="ide" width="100%" playsinline autoplay loop muted>
+                        <source src="video/final_mainfig.mp4" type="video/mp4" />
+                    </video>
                 </div>
 
                 <div class="text-justify">
-                    Our <b>ControlFace</b> can edit the input face image using explicit facial parametric controls, generating realistic images without compromising the identity and other semantic details such as hairstyle.
+                    For text-to-3D generation, we propose to leverage the retrieved 3D asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, resulting in <b>facilitating generation of high-quality 3D assets with added controllability and negligible training cost</b>.
                 </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <b>Motivation</b>
+                </h3>
+                    <p class="text-justify">
+                        Our key motivation is that 3D assets, which are semantically aligned with a given text, become a minimal yet effective guidance of 3D geometries for SDS-based approaches. Then, <b>ReDream can largely maintain the quality of the pre-trained 2D diffusion model, but also provide an effective geometric prior</b>.
+                    </p>
+                    <div class="text-center">
+                        <video id="ide" width="80%" playsinline autoplay loop muted>
+                            <source src="video/web_fig1_short.mp4" type="video/mp4" />
+                        </video>
+                    </div>
             </div>
         </div>
 
@@ -165,9 +168,10 @@
                 <h3>
                     <b>Abstract</b>
                 </h3>
-                <div style="width: 100%;">
+                <div style="width: 90%;">
+                    <img src="img/motivation_1.png" style="float: right; width: 40%; height: auto; margin-left: 20px;">
                     <div class="text-justify">
-                        Manipulation of facial images to meet specific controls such as pose, expression, and lighting, also referred to as face rigging is a complex task in computer vision. Existing methods are limited by their reliance on image datasets, which necessitates individual-specific fine-tuning and limits their ability to retain fine-grained identity and semantic details, reducing practical usability. To overcome these limitations, we introduce ControlFace, a novel face rigging method conditioned on 3DMM renderings that enables flexible, high-fidelity control. We employ a dual-branch U-Nets: one, referred to as FaceNet, captures identity and fine details, while the other focuses on generation. To enhance control precision, control mixer module encodes the correlated features between the target-aligned control and reference-aligned control, and a novel guidance method, reference control guidance, steers the generation process for better control adherence. By training on a facial video dataset, we fully utilize FaceNet’s rich representations while ensuring control adherence. Extensive experiments demonstrate ControlFace’s superior performance in identity preservation, and control precision, highlighting its practicality. Code and pre-trained weights will be publicly available.
+                        Text-to-3D generation has achieved significant success through incorporation of powerful 2D diffusion models, but is currently with problem such as view inconsistency (AKA Janus problem) and limitation in quality and diversity of 3D data viable for training. To sidestep these trade-offs, we explore a retrieval-augmented approach tailored for score distillation, dubbed ReDream. We leverage the retrieved asset to incorporate its geometric prior in the variational objective and adapt the diffusion model's 2D prior toward view consistency, achieving drastic improvements in both geometry and fidelity of generated scenes. We conduct extensive experiments to demonstrate that ReDream exhibits superior quality with increased geometric consistency.
                     </div>
                 </div>
                 
@@ -178,15 +182,15 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2"  style="margin-bottom: 5px;">
                 <h3>
-                    <b>Overall Architecture</b>
+                    <b>Overall Framework</b>
                 </h3>
                 <div class="text-justify">
-                    ControlFace encodes the reference image into the FaceNet and CLIP image encoder for identity and semantic preservation. For generation control, the target control is incorporated into the denoising U-Net through face controller. To enhance the control adherence, the correlated feature between reference control and target control is acquired from the proposed control mixer module.
+                    Given a prompt c, our network retrieve the nearest neighboring assets from the 3D database. With these assets, we perform initialization of an variational distribution for incorporation of robust 3D geometric prior, as well as conducting lightweight adaptation of 2D prior model for probability density across viewpoints.
                 </div>
                 <br>
 
                 <div class="text-center">
-                    <img src="./img/main_fig.png" width="100%">
+                    <img src="./img/framework.png" width="100%">
                 </div>
             </div>
         </div>
@@ -196,24 +200,33 @@
                 <h3>
                     <b>Qualitative Results</b>
                 </h3>
-                <h4>
-                    <b>Results on FFHQ</b>
-                </h4>
-                <div class="text-center">
-                    <img src="./img/ap_qual_0-1.png" width="100%">
+                <div class="video-list" style="margin-top: 20px;">
+                    <ul>
+                    <li>
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/GkUXgF366Xg" title="ReDream Qualitative Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </li>
+                    </ul>
                 </div>
-                <div class="text-center">
-                </div>
-                <h4>
-                    <b>Results on Out-of-Domain</b>
-                </h4>    
-                <div class="text-center">
-                    <img src="./img/ap_ood.png" width="100%">
-                </div>
-                
             </div>
         </div>
 
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2" style="margin-bottom: 5px;">
+                    <h3>
+                       <b>Citation</b>
+                    </h3>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                        <textarea id="bibtex" class="form-control" readonly>
+    @article{seo2024retrieval,
+  title={Retrieval-Augmented Score Distillation for Text-to-3D Generation},
+  author={Seo, Junyoung and Hong, Susung and Jang, Wooseok and Kim, In{\`e}s Hyeonsu and Kwak, Minseop and Lee, Doyup and Kim, Seungryong},
+  journal={arXiv preprint arXiv:2402.02972},
+  year={2024}
+}
+                        </textarea>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
